@@ -36,7 +36,7 @@ if (!$error) {
         implode("\r\n", array(
             "MIME-Version: 1.0",
             "Content-type: text/plain; charset=utf-8",
-            "From: " + $ini["mail_noreply"],
+            "From: " . $ini["mail_noreply"],
             "Reply-To: $user <$email>",
             "X-Mailer: PHP/" . phpversion(),
         ))
