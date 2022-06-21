@@ -18,13 +18,13 @@ $ini = parse_ini_file("vars.ini");
     <script src="<?= $ini["keycloak_url"] ?>/js/keycloak.js" type="text/javascript"></script>
     <script type="text/javascript">
     const keycloak = Keycloak({
-        "realm": <?= $ini["keycloak_realm"] ?>,
-        "auth-server-url": <?= $ini["keycloak_url"] ?>,
+        "realm": "<?= $ini["keycloak_realm"] ?>",
+        "auth-server-url": "<?= $ini["keycloak_url"] ?>",
         "ssl-required": "external",
         "resource": "account",
         "public-client": true,
         "confidential-port": 0,
-        "url": <?= $ini["keycloak_url"] ?>,
+        "url": "<?= $ini["keycloak_url"] ?>",
         "clientId": "requestform",
         "enable-cors": true
     });
