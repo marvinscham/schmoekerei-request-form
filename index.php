@@ -1,5 +1,5 @@
 <?php
-$ini = parse_ini_file("tokens.ini");
+$ini = parse_ini_file("vars.ini");
 ?>
 <!DOCTYPE html>
 <html lang="de">

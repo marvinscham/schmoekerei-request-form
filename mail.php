@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 $error = false;
 $errorcode = "";
 
-$ini = parse_ini_file("tokens.ini");
+$ini = parse_ini_file("vars.ini");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
